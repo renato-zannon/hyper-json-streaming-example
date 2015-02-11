@@ -6,7 +6,7 @@ class Stream
     hash = { index: 0 }
 
     loop do
-        obj[:index] += 1
+        hash[:index] += 1
         yield hash.to_json + "\r\n"
         sleep 0.5
     end
@@ -14,5 +14,5 @@ class Stream
 end
 
 get '/' do
-  MyStream.new
+  Stream.new
 end
