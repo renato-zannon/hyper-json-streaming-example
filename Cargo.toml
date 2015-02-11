@@ -1,6 +1,6 @@
 [package]
 
-name = "json-streaming-example"
+name = "hyper-json-streaming-example"
 version = "0.0.1"
 authors = ["Renato Zannon <renato@rrsz.com.br>"]
 
